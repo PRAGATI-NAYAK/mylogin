@@ -1,4 +1,4 @@
-package com.example.loginsqlite;
+package com.example.mylogin;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,14 +8,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.mylogin.DBHelper;
+import com.example.mylogin.DataBaseHelper;
 import com.example.mylogin.R;
 
 public class LoginActivity extends AppCompatActivity {
 
     EditText username, password;
     Button btnlogin;
-    DBHelper DB;
+    DataBaseHelper DB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
         username = (EditText) findViewById(R.id.username1);
         password = (EditText) findViewById(R.id.password1);
 btnlogin = (Button) findViewById(R.id.btnsignin1);
-        DB = new DBHelper(this);
+        DB = new DataBaseHelper(this);
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
