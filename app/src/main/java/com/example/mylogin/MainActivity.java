@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), com.example.loginsqlite.LoginActivity.class);
+                Intent intent = new Intent(getApplicationContext(), com.example.mylogin.LoginActivity.class);
                 startActivity(intent);
             }
         });
