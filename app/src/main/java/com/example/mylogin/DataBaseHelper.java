@@ -1,4 +1,4 @@
-package com.example.loginsqlite;
+package com.example.mylogin;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
